@@ -28,20 +28,15 @@
 4. Menjalankan Script:
    ```bash
    node mint.js
-⚙️ Konfigurasi Variabel	Deskripsi: 
-RPC_URL	URL RPC node (infura, alchemy, dll)
-CONTRACT_ADDRESS	Alamat kontrak NFT/token yang memiliki fungsi mint(uint256)
-MINT_PRICE	Harga mint per NFT dalam ETH (desimal, bukan wei)
-MINT_AMOUNT	Jumlah NFT yang akan dimint per wallet
-PRIVATE_KEYS	Daftar private key wallet yang dipisahkan dengan koma
 
 ✅ Output Contoh:
    ```bash
-   [1] Wallet: 0x123...abcd
-[1] Tx sent! Hash: 0xabc123...
-[1] ✅ Mint success! Block: 1234567
+[2025-08-08T17:41:02.123Z] ========== MINT SESSION: 08/08/2025, 17:41:02 ==========
+[1] TX Sent - 0x1234...abcd - 0xabc123txhash...
+[1] ✅ Mint Success - Block 1234567
+[2] SKIPPED - Low balance: 0x5678...efgh
+[3] ❌ ERROR - Attempt 1: replacement fee too low
+[3] ❌ ERROR - Attempt 2: nonce too low
+[3] ✅ Mint Success - Block 1234569
 
-[2] Wallet: 0x456...efgh
-[2] Tx sent! Hash: 0xdef456...
-[2] ✅ Mint success! Block: 1234568
 

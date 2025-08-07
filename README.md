@@ -1,11 +1,3 @@
-# 🔥 Multi-Wallet NFT Minting Script (Parallel Execution)
-
-Script ini digunakan untuk melakukan mint NFT (atau fungsi serupa) secara **bersamaan** menggunakan banyak wallet (multi-wallet) di jaringan blockchain (EVM compatible), seperti Ethereum, Optimism, Arbitrum, dll.
-
-Dibangun menggunakan Node.js dan ethers.js, dengan dukungan pembacaan private key dari file `.env`.
-
----
-
 ## 🚀 Fitur
 
 - ✅ Multi-wallet (banyak wallet dalam satu run)
@@ -36,13 +28,12 @@ Dibangun menggunakan Node.js dan ethers.js, dengan dukungan pembacaan private ke
 4. Menjalankan Script:
    ```bash
    node mint.js
-⚙️ Konfigurasi
-   Variabel	Deskripsi
-   RPC_URL	URL RPC node (infura, alchemy, dll)
-   CONTRACT_ADDRESS	Alamat kontrak NFT/token yang memiliki fungsi mint(uint256)
-   MINT_PRICE	Harga mint per NFT dalam ETH (desimal, bukan wei)
-   MINT_AMOUNT	Jumlah NFT yang akan dimint per wallet
-   PRIVATE_KEYS	Daftar private key wallet yang dipisahkan dengan koma
+⚙️ Konfigurasi Variabel	Deskripsi: 
+RPC_URL	URL RPC node (infura, alchemy, dll)
+CONTRACT_ADDRESS	Alamat kontrak NFT/token yang memiliki fungsi mint(uint256)
+MINT_PRICE	Harga mint per NFT dalam ETH (desimal, bukan wei)
+MINT_AMOUNT	Jumlah NFT yang akan dimint per wallet
+PRIVATE_KEYS	Daftar private key wallet yang dipisahkan dengan koma
 
 ✅ Output Contoh:
    ```bash

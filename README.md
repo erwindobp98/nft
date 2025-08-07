@@ -11,7 +11,7 @@
 
 1. **Clone repo / salin script**:
    ```bash
-   git clone https://github.com/erwindo98/nft.git
+   git clone https://github.com/erwindobp98/nft.git
    cd nft
 2. Install dependencies:
    ```bash
